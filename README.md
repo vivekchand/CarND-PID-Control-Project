@@ -1,11 +1,11 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
-# Intro
+### Intro
 
 The main aim of this project was to "build a PID controller and tune the PID hyperparameters by applying the general processing flow as explained in the lessons," and to "test the solution on our simulator!" The simulator provides cross-track error (CTE), speed, and steering angle data via local websocket. The PID (proportional/integral/differential) controller must respond with steering and throttle commands to drive the car reliably around the simulator track.
 
-# Effect each of the P, I, D components had in the implementation
+### Effect each of the P, I, D components had in the implementation
 
 The P, or "proportional", component had the most directly observable effect on the car's behavior. It causes the car to steer proportional (and opposite) to the car's distance from the lane center (which is the CTE) - if the car is far to the right it steers hard to the left, if it's slightly to the left it steers slightly to the right.
 
