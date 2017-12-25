@@ -14,9 +14,11 @@ The D, or "differential", component counteracts the P component's tendency to ri
 The I, or "integral", component counteracts a bias in the CTE which prevents the P-D controller from reaching the center line. This bias can take several forms, such as a steering drift (as in the Control unit lessons), but I believe that in this particular implementation the I component particularly serves to reduce the CTE around curves.
 
 Video of final implementation with appopriate params of P, I, D components: 
+
 [![](https://img.youtube.com/vi/eUlOn58OAlY/0.jpg)](https://www.youtube.com/watch?v=eUlOn58OAlY)
 
 Video of I component removed: 
+
 [![](https://img.youtube.com/vi/vlvnUmFfHHY/0.jpg)](https://www.youtube.com/watch?v=vlvnUmFfHHY)
 
 Notice that the center line is not followed as closely around curves.
