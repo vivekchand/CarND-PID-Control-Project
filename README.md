@@ -1,6 +1,19 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
+# Intro
+
+The main aim of this project was to "build a PID controller and tune the PID hyperparameters by applying the general processing flow as explained in the lessons," and to "test the solution on our simulator!" The simulator provides cross-track error (CTE), speed, and steering angle data via local websocket. The PID (proportional/integral/differential) controller must respond with steering and throttle commands to drive the car reliably around the simulator track.
+
+# Effect each of the P, I, D components had in the implementation
+
+The P, or "proportional", component had the most directly observable effect on the car's behavior. It causes the car to steer proportional (and opposite) to the car's distance from the lane center (which is the CTE) - if the car is far to the right it steers hard to the left, if it's slightly to the left it steers slightly to the right.
+
+The D, or "differential", component counteracts the P component's tendency to ring and overshoot the center line. A properly tuned D parameter will cause the car to approach the center line smoothly without ringing.
+
+The I, or "integral", component counteracts a bias in the CTE which prevents the P-D controller from reaching the center line. This bias can take several forms, such as a steering drift (as in the Control unit lessons), but I believe that in this particular implementation the I component particularly serves to reduce the CTE around curves.
+
+
 ---
 
 ## Dependencies
