@@ -23,6 +23,11 @@ Video of I component removed:
 
 Notice that the center line is not followed as closely around curves.
 
+Video of D component removed:
+
+[![](https://img.youtube.com/vi/y1H4Vb-U4Rs/0.jpg)](https://www.youtube.com/watch?v=y1H4Vb-U4Rs)
+
+It begins to ring back and forth across the center line until finally leaving the track.
 
 
 ---
