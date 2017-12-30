@@ -29,6 +29,11 @@ Video of D component removed:
 
 It begins to ring back and forth across the center line until finally leaving the track.
 
+### How the final hyperparameters (P, I, D coefficients) were chosen
+
+The controller was initially tuned with Ziegler–Nichols method (http://chem.engr.utc.edu/Student-files/x2008-Fa/435-Blue/1942-paper.pdf). It requires to set Kd & Ki to 0 and gradually increase Kp before the car runs with stable & consistent oscillations. But the controller with the resulted paramteres was able to drive car around the track with a lot of wobbling. Later the parameters were further tuned manually by trial-and-error process.
+
+By applying the same process for different speeds, results were linearized in order to make parameters automatically tune with the car speed variation.
 
 ---
 
